@@ -1,0 +1,161 @@
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #051632;
+  color: white;
+}
+
+/* Header como banner */
+header {
+  width: 100%;
+  height: 200px; /* altura en escritorio */
+  background-image: url("public/logo_inova.jpeg");
+  background-size: cover;       /* cubre todo el ancho */
+  background-position: center;  /* centra la imagen */
+  background-repeat: no-repeat;
+}
+
+/* Menú debajo del banner */
+nav {
+  background-color: #0A1F44; /* color corporativo */
+  text-align: center;
+  padding: 15px 0;
+  border-top: 3px solid #C9A14A;   /* borde dorado arriba */
+  border-bottom: 3px solid #C9A14A; /* borde dorado abajo */
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #C9A14A; /* dorado al pasar el mouse */
+}
+
+/* Contacto debajo del menú */
+.contact-info {
+  background-color: #0A1F44;
+  text-align: center;
+  padding: 10px;
+  color: #C9A14A;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+/* Hero principal */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #051632;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.5em;
+}
+
+.hero p {
+  color: #C9A14A;
+  font-size: 1.2em;
+}
+
+/* Sección de barrios */
+.barrios {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background-color: white;
+  color: #051632;
+}
+
+.barrio {
+  width: 45%;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.barrio img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.barrio h2 {
+  color: #051632;
+  padding: 20px;
+}
+
+.barrio p {
+  padding: 0 20px 20px;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #C9A14A;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 20px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #051632;
+  color: #C9A14A;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    height: 120px; /* más bajo en tablets */
+    background-size: contain;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .barrios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barrio {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 80px; /* compacto en celulares */
+    background-size: contain;
+  }
+}
+
